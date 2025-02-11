@@ -4,16 +4,19 @@
 // Your task is to find and fix the bugs so that the function correctly returns the expected messages.
 
 function getDayMessage(day) {
+    let message;
+
     switch (day) {
         case "Monday":
+            message = "It's a weekday.";
+            break;
         case "Tuesday":
         case "Wednesday":
         case "Thursday":
         case "Friday":
-            message = "It's a weekday.";
         case "Saturday":
         case "Sunday":
-            let message = "It's the weekend!";
+            message = "It's the weekend!";
             break;
         default:
             message = "Invalid day.";
