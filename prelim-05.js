@@ -8,12 +8,12 @@ function getDayMessage(day) {
 
     switch (day) {
         case "Monday":
-            message = "It's a weekday.";
-            break;
         case "Tuesday":
         case "Wednesday":
         case "Thursday":
         case "Friday":
+            message = "It's a weekday.";
+            break;
         case "Saturday":
         case "Sunday":
             message = "It's the weekend!";
